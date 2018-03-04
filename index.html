@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <title>jQuery Template</title>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <style>
+  </style>
+
+<script>
+
+
+  $(function(){
+   
+      $('button').click(function(){
+      
+       
+ 
+        var name = $("#name").val()
+        var landSpot = $("#landSpot").val()
+        var numberofppl = $("#numberofppl").val()
+        var fortnite = "Hello very wonderful name you have, " + name + ", " + 
+                      " You are currently playing with  " + numberofppl +" teammates" + '.' + "You all landed " + landSpot + " which is very interesting. You decided to keep ypur weapons. You all got killed by a hacker in the lobby" 
+        
+        $("button").click(function(){
+          $("p").html(fortnite);
+       
+             });
+        });
+  });
+
+  </script>
+</head>
+<body>
+
+
+ <p>Fill the form out below!!</p>
+ 
+ Username: <br><input id="name"><br>
+Number of people your playing with: <br><input id="numberofppl"><br>
+ Where you landed on the map: <br><input id="landSpot"><br>
+ 
+ 
+
+ <button>Click Me To Keep Your Weapons</button><br>
+ 
+ <button>Click Me To Share Your Weapons</button>
+ 
+ 
+
+  
+
+</body>
+</html>
